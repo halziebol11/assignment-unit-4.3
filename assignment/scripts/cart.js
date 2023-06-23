@@ -13,7 +13,7 @@ function addItem (item){
     else {
         return false;
     }
-}
+}// end addItem
 
 //test addItem
 console.log("Items added to basket? -should return true-", addItem('bread'));
@@ -24,12 +24,12 @@ function listItems () {
     for (let i = 0; i < basket.length; i++) {
         console.log(basket[i]);
     }
-}
+}// end listItems
 
 //define function empty
 function empty () {
     basket=[];
-}
+}//end empty
 
 //test empty()
 empty();
@@ -43,7 +43,7 @@ function isFull() {
     else {
         return true
     }
-}
+}//end isFull
 
 //test isFull()
 addItem('blueberries');
@@ -66,7 +66,7 @@ function removeItem (item) {
     else {
         return null
     }
-}
+}// end removeItem
 
 //test removeItem()
 console.log("item removed? -should be kale", removeItem('kale'));
